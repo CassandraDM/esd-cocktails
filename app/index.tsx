@@ -4,7 +4,7 @@ import { Button, Text, View, StyleSheet } from "react-native";
 export default function Index() {
   const router = useRouter();
   const handlePress = () => {
-    router.push("counter/index");
+    router.push("counter");
   };
   return (
     <View style={styles.container}>
