@@ -1,22 +1,37 @@
-import cocktails from "../cocktails.json";
+import React from "react";
 import { View, Text, StyleSheet } from "react-native";
+import { useLocalSearchParams } from "expo-router";
+import cocktails from "../cocktails.json";
 
 export default function CocktailDetailsScreen() {
+  const { id } = useLocalSearchParams();
+  console.log("Retrieved ID:", id); // Debugging line to check the retrieved ID
+  const cocktail = cocktails.find((cocktail) => cocktail.id.toString() === id);
+
+  if (!cocktail) {
+    console.log("Cocktail not found for ID:", id); // Debugging line to check if the cocktail is not found
+    return (
+      <View style={styles.container}>
+        <Text style={styles.h1}>Cocktail not found</Text>
+      </View>
+    );
+  }
+
   return (
     <View style={styles.container}>
       <View style={styles.content}>
         <Text style={styles.h1}>Cocktail's Details</Text>
         <View style={styles.detailsContainer}>
           <Text style={styles.label}>Name:</Text>
-          <Text style={styles.value}>{cocktails[0].name}</Text>
+          <Text style={styles.value}>{cocktail.name}</Text>
           <Text style={styles.label}>Composition:</Text>
-          <Text style={styles.value}> {cocktails[0].composition}</Text>
+          <Text style={styles.value}>{cocktail.composition}</Text>
           <Text style={styles.label}>Description:</Text>
-          <Text style={styles.value}> {cocktails[0].description}</Text>
+          <Text style={styles.value}>{cocktail.description}</Text>
           <Text style={styles.label}>Origin:</Text>
-          <Text style={styles.value}> {cocktails[0].origin}</Text>
-          <Text style={styles.label}>Alcohol Percentage:</Text>
-          <Text style={styles.value}> {cocktails[0].alcoholContent}</Text>
+          <Text style={styles.value}>{cocktail.origin}</Text>
+          <Text style={styles.label}>Alcohol Content:</Text>
+          <Text style={styles.value}>{cocktail.alcoholContent}</Text>
         </View>
       </View>
       <View style={styles.footer}>
@@ -36,10 +51,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   content: {
-    backgroundColor: "black",
+    paddingHorizontal: 20,
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    width: "100%",
   },
   h1: {
     fontSize: 32,
@@ -51,7 +65,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#333",
     padding: 20,
     borderRadius: 10,
-    width: "90%",
+    width: "100%",
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.8,
@@ -69,14 +83,14 @@ const styles = StyleSheet.create({
     color: "white",
     marginBottom: 10,
   },
-  text: {
-    fontSize: 16,
-    color: "white",
-  },
   footer: {
     padding: 10,
     backgroundColor: "pink",
     alignItems: "center",
+  },
+  text: {
+    fontSize: 16,
+    color: "white",
   },
   warning: {
     fontSize: 14,

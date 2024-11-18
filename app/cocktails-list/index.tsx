@@ -12,8 +12,8 @@ import cocktails from "../cocktails.json";
 export default function CocktailsList() {
   const router = useRouter();
 
-  const goToCocktailDetailsScreen = () => {
-    router.push("cocktails-list/[id]");
+  const goToCocktailDetailsScreen = (id: number) => {
+    router.push(`/cocktails-list/${id}`);
   };
 
   return (
@@ -26,7 +26,7 @@ export default function CocktailsList() {
           renderItem={({ item }) => (
             <TouchableOpacity
               style={styles.cocktailItem}
-              onPress={goToCocktailDetailsScreen}
+              onPress={() => goToCocktailDetailsScreen(item.id)}
             >
               <Text style={styles.cocktailName}>{item.name}</Text>
               <Text style={styles.cocktailComposition}>{item.composition}</Text>
