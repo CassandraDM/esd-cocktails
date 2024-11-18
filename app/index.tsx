@@ -1,12 +1,12 @@
 import { useRouter } from "expo-router";
-import { Button, Text, View, StyleSheet } from "react-native";
+import { TouchableOpacity, Text, View, StyleSheet } from "react-native";
 
 export default function Index() {
   const router = useRouter();
   const goToCounter = () => {
     router.push("counter");
   };
-  const GoToCocktailsList = () => {
+  const goToCocktailsList = () => {
     router.push("cocktails-list");
   };
   return (
@@ -14,8 +14,12 @@ export default function Index() {
       <View style={styles.content}>
         <Text style={styles.h1}>ESD Cocktails</Text>
         <Text style={styles.h3}>Bonjour ESD</Text>
-        <Button title="Voir tous les cocktails" onPress={GoToCocktailsList} />
-        <Button title="Compteur" onPress={goToCounter} />
+        <TouchableOpacity style={styles.button} onPress={goToCocktailsList}>
+          <Text style={styles.buttonText}>Voir tous les cocktails</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={goToCounter}>
+          <Text style={styles.buttonText}>Compteur</Text>
+        </TouchableOpacity>
         <Text style={styles.text}>
           Un cocktail est une boisson obtenue par mélange de plusieurs
           ingrédients, avec ou sans alcool :) ... à vous de voir !
@@ -60,6 +64,17 @@ const styles = StyleSheet.create({
     color: "lightpink",
   },
   text: {
+    fontSize: 16,
+    color: "white",
+  },
+  button: {
+    backgroundColor: "pink",
+    padding: 10,
+    borderRadius: 5,
+    marginVertical: 10,
+    alignItems: "center",
+  },
+  buttonText: {
     fontSize: 16,
     color: "white",
   },
