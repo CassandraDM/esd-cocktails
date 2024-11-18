@@ -45,6 +45,19 @@ export default function RootLayout() {
             },
           }}
         />
+        <Stack.Screen
+          name="cocktails-list/[id]"
+          options={{
+            title: "Cocktail's Details",
+            headerStyle: {
+              backgroundColor: "black",
+            },
+            headerTintColor: "pink",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }}
+        />
       </Stack>
     </>
   );

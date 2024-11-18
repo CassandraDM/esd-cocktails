@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "Tequila Sunrise",
+    "composition": "Tequila, Orange Juice, Grenadine",
+    "description": "A refreshing cocktail with a beautiful sunrise effect.",
+    "origin": "Mexico",
+    "alcoholContent": "12%"
+  },
+  {
+    "id": 2,
+    "name": "Mojito",
+    "composition": "White Rum, Sugar, Lime Juice, Soda Water, Mint",
+    "description": "A classic Cuban cocktail with a minty fresh taste.",
+    "origin": "Cuba",
+    "alcoholContent": "10%"
+  },
+  {
+    "id": 3,
+    "name": "Piña Colada",
+    "composition": "White Rum, Coconut Cream, Pineapple Juice",
+    "description": "A tropical cocktail with a creamy coconut flavor.",
+    "origin": "Puerto Rico",
+    "alcoholContent": "13%"
+  },
+  {
+    "id": 4,
+    "name": "Daiquiri",
+    "composition": "White Rum, Sugar, Lime Juice",
+    "description": "A simple yet delicious cocktail with a tangy lime taste.",
+    "origin": "Cuba",
+    "alcoholContent": "14%"
+  },
+  {
+    "id": 5,
+    "name": "Margarita",
+    "composition": "Tequila, Lime Juice, Cointreau",
+    "description": "A popular Mexican cocktail with a tangy and sweet flavor.",
+    "origin": "Mexico",
+    "alcoholContent": "15%"
+  },
+  {
+    "id": 6,
+    "name": "Caipirinha",
+    "composition": "Cachaça, Sugar, Lime",
+    "description": "Brazil's national cocktail with a refreshing lime taste.",
+    "origin": "Brazil",
+    "alcoholContent": "16%"
+  },
+  {
+    "id": 7,
+    "name": "Old Fashioned",
+    "composition": "Bourbon or Rye Whiskey, Sugar, Bitters",
+    "description": "A classic American cocktail with a strong whiskey flavor.",
+    "origin": "USA",
+    "alcoholContent": "32%"
+  },
+  {
+    "id": 8,
+    "name": "Negroni",
+    "composition": "Gin, Vermouth Rosso, Campari",
+    "description": "An Italian cocktail with a bitter and sweet taste.",
+    "origin": "Italy",
+    "alcoholContent": "24%"
+  },
+  {
+    "id": 9,
+    "name": "Cosmopolitan",
+    "composition": "Vodka, Triple Sec, Cranberry Juice, Lime Juice",
+    "description": "A stylish cocktail with a tart and sweet flavor.",
+    "origin": "USA",
+    "alcoholContent": "20%"
+  },
+  {
+    "id": 10,
+    "name": "Martini",
+    "composition": "Gin, Dry Vermouth",
+    "description": "A classic cocktail with a strong and dry taste.",
+    "origin": "USA",
+    "alcoholContent": "30%"
+  },
+  {
+    "id": 11,
+    "name": "Bloody Mary",
+    "composition": "Vodka, Tomato Juice, Lemon Juice, Worcestershire Sauce, Tabasco",
+    "description": "A savory cocktail with a spicy kick.",
+    "origin": "USA",
+    "alcoholContent": "10%"
+  },
+  {
+    "id": 12,
+    "name": "Espresso Martini",
+    "composition": "Vodka, Coffee Liqueur, Espresso",
+    "description": "A rich and creamy cocktail with a coffee flavor.",
+    "origin": "UK",
+    "alcoholContent": "18%"
+  },
+  {
+    "id": 13,
+    "name": "Moscow Mule",
+    "composition": "Vodka, Ginger Beer, Lime Juice",
+    "description": "A refreshing cocktail with a spicy ginger flavor.",
+    "origin": "USA",
+    "alcoholContent": "11%"
+  },
+  {
+    "id": 14,
+    "name": "Aperol Spritz",
+    "composition": "Aperol, Prosecco, Soda Water",
+    "description": "A light and bubbly cocktail with a bitter-sweet taste.",
+    "origin": "Italy",
+    "alcoholContent": "8%"
+  },
+  {
+    "id": 15,
+    "name": "Mai Tai",
+    "composition": "White Rum, Dark Rum, Lime Juice, Orgeat Syrup, Orange Curaçao",
+    "description": "A tropical cocktail with a complex flavor.",
+    "origin": "USA",
+    "alcoholContent": "17%"
+  },
+  {
+    "id": 16,
+    "name": "Whiskey Sour",
+    "composition": "Bourbon, Lemon Juice, Sugar, Egg White",
+    "description": "A classic cocktail with a tart and smooth taste.",
+    "origin": "USA",
+    "alcoholContent": "14%"
+  },
+  {
+    "id": 17,
+    "name": "Gin Tonic",
+    "composition": "Gin, Tonic Water",
+    "description": "A simple and refreshing cocktail with a bitter taste.",
+    "origin": "UK",
+    "alcoholContent": "10%"
+  },
+  {
+    "id": 18,
+    "name": "Dark and Stormy",
+    "composition": "Dark Rum, Ginger Beer",
+    "description": "A bold cocktail with a spicy ginger flavor.",
+    "origin": "Bermuda",
+    "alcoholContent": "11%"
+  },
+  {
+    "id": 19,
+    "name": "Pisco Sour",
+    "composition": "Pisco, Lemon Juice, Sugar, Egg White",
+    "description": "A South American cocktail with a tangy and frothy taste.",
+    "origin": "Peru",
+    "alcoholContent": "13%"
+  },
+  {
+    "id": 20,
+    "name": "French 75",
+    "composition": "Gin, Champagne, Lemon Juice, Sugar",
+    "description": "A sophisticated cocktail with a bubbly and citrusy flavor.",
+    "origin": "France",
+    "alcoholContent": "12%"
+  },
+  {
+    "id": 21,
+    "name": "Paloma",
+    "composition": "Tequila, Grapefruit Soda",
+    "description": "A refreshing cocktail with a tangy grapefruit flavor.",
+    "origin": "Mexico",
+    "alcoholContent": "10%"
+  }
+]
