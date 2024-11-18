@@ -18,15 +18,15 @@ export default function Counter() {
     <View style={styles.container}>
       <Text style={styles.counterText}>Compteur: {counter}</Text>
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button} onPress={handleIncrement}>
-          <Text style={styles.buttonText}>+</Text>
-        </TouchableOpacity>
         <TouchableOpacity
           style={[styles.button, counter === 0 && styles.buttonDisabled]}
           onPress={handleDecrement}
           disabled={counter === 0}
         >
           <Text style={styles.buttonText}>-</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={handleIncrement}>
+          <Text style={styles.buttonText}>+</Text>
         </TouchableOpacity>
       </View>
     </View>
