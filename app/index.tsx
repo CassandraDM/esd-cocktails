@@ -3,15 +3,19 @@ import { Button, Text, View, StyleSheet } from "react-native";
 
 export default function Index() {
   const router = useRouter();
-  const handlePress = () => {
+  const goToCounter = () => {
     router.push("counter");
+  };
+  const GoToCocktailsList = () => {
+    router.push("cocktails-list");
   };
   return (
     <View style={styles.container}>
       <View style={styles.content}>
         <Text style={styles.h1}>ESD Cocktails</Text>
         <Text style={styles.h3}>Bonjour ESD</Text>
-        <Button title="Voir tous les cocktails" onPress={handlePress} />
+        <Button title="Voir tous les cocktails" onPress={GoToCocktailsList} />
+        <Button title="Compteur" onPress={goToCounter} />
         <Text style={styles.text}>
           Un cocktail est une boisson obtenue par mélange de plusieurs
           ingrédients, avec ou sans alcool :) ... à vous de voir !
